@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% load static tailwind_tags %}
+{% block content %}
+    <div class="flex bg-White items-center justify-center md:min-h-screen md:py-2">
+        <div class="flex bg-lightBlue items-center shadow-md justify-center w-full md:my-10 sm:mx-10 ">
+            <div class="flex flex-col items-center md:flex-row  md:gap-4 md:w-full my-10 mx-10 bg-White justify-center rounded-lg">
+                <div class="relative items-center w-full mx-2 my-2  md:h-full md:w-2/5 rounded-lg">
+                    <svg class="z-0" xmlns="http://www.w3.org/2000/svg" width="274" height="568" fill="none" viewBox="0 0 274 568">
+                        <rect width="274" height="568" fill="#483EFF" rx="10"/>
+                        <mask id="a" width="274" height="568" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha">
+                            <rect width="274" height="568" fill="#fff" rx="10"/>
+                        </mask>
+                        <g mask="url(#a)">
+                            <path fill="#6259FF" fill-rule="evenodd" d="M-34.692 543.101C3.247 632.538 168.767 685.017 211.96 612.52c43.194-72.497-66.099-85.653-104.735-160.569-38.635-74.916-68.657-121.674-124.482-104.607-55.824 17.068-55.375 106.32-17.436 195.757Z" clip-rule="evenodd"/>
+                            <path fill="#F9818E" fill-rule="evenodd" d="M233.095 601.153c60.679-28.278 92.839-143.526 41.875-171.528-50.965-28.003-57.397 47.579-108.059 75.987-50.662 28.408-82.14 50.207-69.044 88.241 13.096 38.034 74.549 35.578 135.228 7.3Z" clip-rule="evenodd"/>
+                            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="5" d="m165.305 469.097 10.607-10.806M209.461 474.581l-12.506-10.503M187.56 488.991l-6.908 14.798"/>
+                            <path fill="#FFAF7E" d="M.305 546.891c37.003 0 67-29.997 67-67s-29.997-67-67-67-67 29.997-67 67 29.997 67 67 67Z"/>
+                        </g>
+                    </svg>
+                    
+                    <div class="absolute w-full top-0 left-0 md:w-full md:h-full flex pt-10 pl-10 md:space-y-4 justify-start">
+                        
+                        <!-- Your steps content here -->
+                        <div class="flex flex-col space-y-8">
+                            <div class="flex gap-6">
+                                <div class="bg-pastelBlue border  h-10 w-10 rounded-full flex justify-center items-center">
+                                    <div class="text-marineBlue  font-bold text-lg border-White">1</div>
+                                </div>
+                                <div>
+                                    <h1 class="text-coolGray leading-3 pb-2">STEP 1</h1>
+                                    <h1 class="text-white font-ubuntu font-bold">YOUR INFO</h1>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-6">
+                                <div class="border-White h-10 w-10 border rounded-full flex justify-center items-center">
+                                    <div class="text-White font-bold  text-lg">2</div>
+                                </div>
+                                <div>
+                                    <h1 class="text-coolGray leading-3 pb-2">STEP 2</h1>
+                                    <h1 class="text-white font-ubuntu font-bold">SELECT PLAN</h1>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-6">
+                                <div class=" border-White border h-10 w-10 rounded-full flex justify-center items-center">
+                                    <div class="text-White font-bold text-lg">3</div>
+                                </div>
+                                <div>
+                                    <h1 class="text-coolGray leading-3 pb-2">STEP 3</h1>
+                                    <h1 class="text-white font-ubuntu font-bold">ADD-ONS</h1>
+                                </div>
+                            </div>
+                            
+                            <div class="flex gap-6">
+                                <div class=" border-White border h-10 w-10 rounded-full flex justify-center items-center">
+                                    <div class="text-White font-bold text-lg">4</div>
+                                </div>
+                                <div>
+                                    <h1 class="text-coolGray leading-3 pb-2">STEP 4</h1>
+                                    <h1 class="text-white font-ubuntu font-bold">SUMMARY</h1>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>    
+                </div>
+
+                <div class="bg-White h-full w-3/5 mx-2 my-2 space-y-4">
+                    <h1 class="text-3xl font-bold font-ubuntu pt-10">Personal Info</h1>
+                    <p class="font-ubuntu text-md text-coolGray">Please provide your name, email address and phone number </p>
+                    <form>
+                        <label class="block pr-10">
+                          <span class="block text-md font-medium font-ubuntu text-marineBlue pb-2">Name</span>
+                          <input type="text" class="peer text-coolGray w-full rounded-lg border-coolGray font-ubuntu focus:border-lightBlue" placeholder="e.g. Marube Snipher Abel"/>
+                            <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">
+                                Please provide a valid name.
+                            </p>
+                        </label>
+                        <label class="block pr-10">
+                            <span class="block text-md font-medium font-ubuntu text-marineBlue pb-2">Email Address</span>
+                            <input type="email" class="peer text-coolGray w-full rounded-lg border-coolGray font-ubuntu focus:border-lightBlue" placeholder="example@gmail.com"/>
+                            <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">
+                              Please provide a valid email address.
+                            </p>
+                        </label>
+                        <label class="block pr-10">
+                            <span class="block text-md font-medium font-ubuntu text-marineBlue pb-2">Phone Number</span>
+                            <input type="text" class="peer text-coolGray w-full rounded-lg border-coolGray font-ubuntu focus:border-lightBlue" placeholder="+254798393182"/>
+                            <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">
+                              Please provide a valid phone number.
+                            </p>
+                        </label>
+                      </form>
+                      <div class="flex justify-end pr-10">
+                        <a class="cursor-ponter" href="#">
+                            <button class="rounded-md text-White p-3  bg-marineBlue hover:bg-purplishBlue">Next Step</button>
+                        </a>
+                        
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

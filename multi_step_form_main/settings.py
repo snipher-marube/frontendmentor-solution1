@@ -29,6 +29,9 @@ INSTALLED_APPS = [
     # tailwind
     'tailwind',
     'tailwindcss',
+
+    #local apps
+    'app',
 ]
 
 TAILWIND_APP_NAME = 'tailwindcss'
