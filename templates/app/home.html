@@ -3,8 +3,11 @@
 {% block content %}
     <div class="flex bg-White items-center justify-center md:min-h-screen md:py-2">
         <div class="flex bg-lightBlue items-center shadow-md justify-center w-full md:my-10 sm:mx-10 ">
-            <div class="flex flex-col items-center md:flex-row  md:gap-4 md:w-full my-10 mx-10 bg-White justify-center rounded-lg">
-                <div class="relative items-center w-full mx-2 my-2  md:h-full md:w-2/5 rounded-lg">
+            <div class="flex flex-col items-center md:flex-row  md:gap-4 md:w-full md:my-10 md:mx-10 bg-White justify-center rounded-lg">
+                <!--left side start-->
+                
+                <div class="relative hidden md:block md:items-center  md:mx-2 md:my-2  md:h-full md:w-2/5 md:rounded-lg">
+                    <!--background svg-->
                     <svg class="z-0" xmlns="http://www.w3.org/2000/svg" width="274" height="568" fill="none" viewBox="0 0 274 568">
                         <rect width="274" height="568" fill="#483EFF" rx="10"/>
                         <mask id="a" width="274" height="568" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha">
@@ -18,15 +21,16 @@
                         </g>
                     </svg>
                     
-                    <div class="absolute w-full top-0 left-0 md:w-full md:h-full flex pt-10 pl-10 md:space-y-4 justify-start">
+                    <div class="absolute top-0 left-0 md:w-full md:h-full flex pt-10 pl-10 md:space-y-4 justify-start">
                         
                         <!-- Your steps content here -->
-                        <div class="flex flex-col space-y-8">
+                        <div></div>
+                        <div class="flex flex-row space-x-3 md:flex-col md:space-y-8">
                             <div class="flex gap-6">
                                 <div class="bg-pastelBlue border  h-10 w-10 rounded-full flex justify-center items-center">
                                     <div class="text-marineBlue  font-bold text-lg border-White">1</div>
                                 </div>
-                                <div>
+                                <div class="hidden md:block">
                                     <h1 class="text-coolGray leading-3 pb-2">STEP 1</h1>
                                     <h1 class="text-white font-ubuntu font-bold">YOUR INFO</h1>
                                 </div>
@@ -36,7 +40,7 @@
                                 <div class="border-White h-10 w-10 border rounded-full flex justify-center items-center">
                                     <div class="text-White font-bold  text-lg">2</div>
                                 </div>
-                                <div>
+                                <div class="hidden md:block">
                                     <h1 class="text-coolGray leading-3 pb-2">STEP 2</h1>
                                     <h1 class="text-white font-ubuntu font-bold">SELECT PLAN</h1>
                                 </div>
@@ -46,7 +50,7 @@
                                 <div class=" border-White border h-10 w-10 rounded-full flex justify-center items-center">
                                     <div class="text-White font-bold text-lg">3</div>
                                 </div>
-                                <div>
+                                <div class="hidden md:block">
                                     <h1 class="text-coolGray leading-3 pb-2">STEP 3</h1>
                                     <h1 class="text-white font-ubuntu font-bold">ADD-ONS</h1>
                                 </div>
@@ -56,7 +60,7 @@
                                 <div class=" border-White border h-10 w-10 rounded-full flex justify-center items-center">
                                     <div class="text-White font-bold text-lg">4</div>
                                 </div>
-                                <div>
+                                <div class="hidden md:block">
                                     <h1 class="text-coolGray leading-3 pb-2">STEP 4</h1>
                                     <h1 class="text-white font-ubuntu font-bold">SUMMARY</h1>
                                 </div>
@@ -65,8 +69,10 @@
 
                     </div>    
                 </div>
+                <!--left side end-->
 
-                <div class="bg-White h-full w-3/5 mx-2 my-2 space-y-4">
+                <!--right side start-->
+                <div class=" bg-White  md:h-full md:w-3/5 mx-2 my-2 space-y-4">
                     <h1 class="text-3xl font-bold font-ubuntu pt-10">Personal Info</h1>
                     <p class="font-ubuntu text-md text-coolGray">Please provide your name, email address and phone number </p>
                     <form>
@@ -99,6 +105,7 @@
                         
                       </div>
                 </div>
+                <!--right side end-->
             </div>
         </div>
     </div>
