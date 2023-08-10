@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 {% load static tailwind_tags %}
 {% block content %}
-    <div class="flex bg-White items-center justify-center md:min-h-screen md:py-2">
-        <div class="flex bg-lightBlue items-center shadow-md justify-center w-full md:my-10 sm:mx-10 ">
-            <div class="flex flex-col items-center md:flex-row  md:gap-4 md:w-full md:my-10 md:mx-10 bg-White justify-center rounded-lg">
+    <div class="flex bg-White  md:min-h-screen md:py-2">
+        <div class="flex bg-lightBlue  shadow-md justify-center w-full md:my-10 sm:mx-10 ">
+            <div class="flex flex-col md:flex-row  md:gap-4 md:w-full md:my-10 md:mx-10 bg-White justify-center rounded-lg">
                 <!--left side start-->
                 
                 <div class="relative hidden md:block md:items-center  md:mx-2 md:my-2  md:h-full md:w-2/5 md:rounded-lg">
@@ -25,10 +25,10 @@
                         
                         <!-- Your steps content here -->
                         <div></div>
-                        <div class="flex flex-row  md:flex-col md:space-y-8">
+                        <div class="flex flex-row md:flex-col md:space-y-8">
                             <div class="flex gap-6">
-                                <div class="bg-pastelBlue border  h-10 w-10 rounded-full flex justify-center items-center">
-                                    <div class="text-marineBlue  font-bold text-lg border-White">1</div>
+                                <div class=" border  h-10 w-10 rounded-full flex justify-center items-center">
+                                    <div class="text-white  font-bold text-lg border-White">1</div>
                                 </div>
                                 <div class="hidden md:block">
                                     <h1 class="text-coolGray leading-3 pb-2">STEP 1</h1>
@@ -37,8 +37,8 @@
                             </div>
 
                             <div class="flex gap-6">
-                                <div class="border-White h-10 w-10 border rounded-full flex justify-center items-center">
-                                    <div class="text-White font-bold  text-lg">2</div>
+                                <div class="bg-pastelBlue border-White h-10 w-10 border rounded-full flex justify-center items-center">
+                                    <div class=" text-marineBlue font-bold  text-lg">2</div>
                                 </div>
                                 <div class="hidden md:block">
                                     <h1 class="text-coolGray leading-3 pb-2">STEP 2</h1>
@@ -73,37 +73,50 @@
 
                 <!--right side start-->
                 <div class=" bg-White  md:h-full md:w-3/5 mx-2 my-2 space-y-4">
-                    <h1 class="text-3xl font-bold font-ubuntu pt-10">Personal Info</h1>
-                    <p class="font-ubuntu text-md text-coolGray">Please provide your name, email address and phone number </p>
-                    <form>
-                        <label class="block pr-10">
-                          <span class="block text-md font-medium font-ubuntu text-marineBlue pb-2">Name</span>
-                          <input type="text" class="peer text-coolGray w-full rounded-lg border-coolGray font-ubuntu focus:border-lightBlue" placeholder="e.g. Marube Snipher Abel"/>
-                            <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">
-                                Please provide a valid name.
-                            </p>
+                    <h1 class="text-3xl font-bold font-ubuntu pt-10">Select your Plan</h1>
+                    <p class="font-ubuntu text-md text-coolGray">You have option for mothly or yearly billing </p>
+                    <div class="flex md:w-full flex-col md:flex-row md:gap-3 justify-between pr-10">
+                        <div class="border md:w-1/3  shadow-sm shadow-coolGray border-coolGray rounded-lg pl-4 pr-10 pt-5 pb-5">
+                            <div class="bg-purplishBlue top-0 border-White border h-10 w-10 rounded-full flex justify-center items-center">
+                                <div class="text-White font-bold text-lg">4</div>
+                            </div>
+                            <h1 class="font-ubuntu font-bold text-lg mt-8">Arcade</h1>
+                            <p class="text-coolGray font-ubuntu">$9/mo</p>
+                        </div>
+                        <div class="hover:border md:w-1/3 shadow-sm shadow-coolGray border-coolGray rounded-lg pl-4 pr-10 pt-5 pb-5">
+                            <div class="bg-purplishBlue top-0 border-White border h-10 w-10 rounded-full flex justify-center items-center">
+                                <div class="text-White font-bold text-lg">4</div>
+                            </div>
+                            <h1 class="font-ubuntu font-bold text-lg mt-8">Advanced</h1>
+                            <p class="text-coolGray font-ubuntu">$12/mo</p>
+                        </div>
+                        <div class="hover:border md:w-1/3 shadow-sm shadow-coolGray border-coolGray rounded-lg pl-4 pr-10 pt-5 pb-5">
+                            <div class="bg-purplishBlue top-0 border-White border h-10 w-10 rounded-full flex justify-center items-center">
+                                <div class="text-White font-bold text-lg">4</div>
+                            </div>
+                            <h1 class="font-ubuntu font-bold text-lg mt-8">Pro</h1>
+                            <p class="text-coolGray font-ubuntu">$15/mo</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 flex-row bg-Alabaster items-center p-6 justify-center mr-10">
+                        <div class="font-ubuntu">Monthly</div>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="hidden" />
+                            <div class="relative  w-12 h-6 bg-marineBlue rounded-full shadow-inner">
+                                <div class="absolute p-2 inset-y-0 left-0 w-6 h-6 bg-white rounded-full transition-transform transform translate-x-0"></div>
+                            </div>
                         </label>
-                        <label class="block pr-10">
-                            <span class="block text-md font-medium font-ubuntu text-marineBlue pb-2">Email Address</span>
-                            <input type="email" class="peer text-coolGray w-full rounded-lg border-coolGray font-ubuntu focus:border-lightBlue" placeholder="example@gmail.com"/>
-                            <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">
-                              Please provide a valid email address.
-                            </p>
-                        </label>
-                        <label class="block pr-10">
-                            <span class="block text-md font-medium font-ubuntu text-marineBlue pb-2">Phone Number</span>
-                            <input type="text" class="peer text-coolGray w-full rounded-lg border-coolGray font-ubuntu focus:border-lightBlue" placeholder="+254798393182"/>
-                            <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">
-                              Please provide a valid phone number.
-                            </p>
-                        </label>
-                      </form>
-                      <div class="flex justify-end pr-10">
-                        <a class="cursor-ponter" href="{% url 'pricing' %}">
-                            <button class="rounded-md text-White p-3  bg-marineBlue hover:bg-purplishBlue">Next Step</button>
-                        </a>
                         
-                      </div>
+                        <div class="text-coolGray font-ubuntu font-semibold">Yearly</div>
+
+                    </div>
+                      
+                    <div class="flex justify-between pt-20 pr-10">
+                        <a href="{% url 'home' %}" class="cursor-ponter p-3 text-coolGray hover:underline">Go Back</a>
+                        <a class="cursor-ponter" href="{% url 'addons' %}">
+                            <button class="rounded-md text-White p-3  bg-marineBlue hover:bg-purplishBlue">Next Step</button>
+                        </a>    
+                    </div>
                 </div>
                 <!--right side end-->
             </div>
