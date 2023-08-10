@@ -1,6 +1,6 @@
 # Frontend Mentor - Multi-step form
 
-![Design preview for the Multi-step form coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Multi-step form coding challenge](https://github.com/snipher-marube/frontendmentor-solution1/blob/main/static/design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
