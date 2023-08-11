@@ -14,3 +14,5 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'multi_step_form_main.settings')
 
 application = get_wsgi_application()
+
+app = application
