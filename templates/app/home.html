@@ -75,34 +75,32 @@
                 <div class=" bg-White  md:h-full md:w-3/5 mx-2 my-2 space-y-4">
                     <h1 class="text-3xl font-bold font-ubuntu pt-10">Personal Info</h1>
                     <p class="font-ubuntu text-md text-coolGray">Please provide your name, email address and phone number </p>
-                    <form id="step1Form" method="POST" action="">
+                    <form>
                         <label class="block pr-10">
-                            <span class="block text-md font-medium font-ubuntu text-marineBlue pb-2">Name</span>
-                            <input type="text" class="peer text-coolGray w-full rounded-lg border-coolGray font-ubuntu focus:border-lightBlue" placeholder="e.g. Marube Snipher Abel" required />
-                            <p class="mt-2 text-pink-600 text-sm">
+                          <span class="block text-md font-medium font-ubuntu text-marineBlue pb-2">Name</span>
+                          <input type="text" class="peer text-coolGray w-full rounded-lg border-coolGray font-ubuntu focus:border-lightBlue" placeholder="e.g. Marube Snipher Abel" required/>
+                            <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">
                                 Please provide a valid name.
                             </p>
                         </label>
                         <label class="block pr-10">
                             <span class="block text-md font-medium font-ubuntu text-marineBlue pb-2">Email Address</span>
-                            <input type="email" class="peer text-coolGray w-full rounded-lg border-coolGray font-ubuntu focus:border-lightBlue" placeholder="example@gmail.com" required />
-                            <p class="mt-2 text-pink-600 text-sm">
-                                Please provide a valid email address.
+                            <input type="email" class="peer text-coolGray w-full rounded-lg border-coolGray font-ubuntu focus:border-lightBlue" placeholder="example@gmail.com" required/>
+                            <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">
+                              Please provide a valid email address.
                             </p>
                         </label>
                         <label class="block pr-10">
                             <span class="block text-md font-medium font-ubuntu text-marineBlue pb-2">Phone Number</span>
-                            <input type="tel" class="peer text-coolGray w-full rounded-lg border-coolGray font-ubuntu focus:border-lightBlue" placeholder="+254798393182" required />
-                            <p class="mt-2 text-pink-600 text-sm">
-                                Please provide a valid phone number.
-                            </p>
+                            <input type="tel" class="peer text-coolGray w-full rounded-lg border-coolGray font-ubuntu focus:border-lightBlue" placeholder="+254 798 393182" required/>
+                            <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">
+                              Please provide a valid phone number.
+                              </p>
                         </label>
-                        
-                    </form>
-                    
+                      </form>
                       <div class="flex justify-end pr-10">
                         <a class="cursor-ponter" href="{% url 'pricing' %}">
-                            <button id="step1NextButton" class="rounded-md text-White p-3  bg-marineBlue hover:bg-purplishBlue">Next Step</button>
+                            <button class="rounded-md text-White p-3  bg-marineBlue hover:bg-purplishBlue">Next Step</button>
                         </a>
                         
                       </div>
@@ -111,16 +109,4 @@
             </div>
         </div>
     </div>
-
-    <script>
-        const step1Form = document.getElementById('step1Form');
-        const step1NextButton = document.getElementById('step1NextButton');
-        
-        step1NextButton.addEventListener('click', function(event) {
-            if (!step1Form.checkValidity()) {
-                event.preventDefault(); // Prevent the form submission
-                alert('Please fill in all the required fields in Step 1 before proceeding.');
-            }
-        });
-    </script>
 {% endblock %}
