@@ -11,3 +11,6 @@ def addons(request):
 
 def summary(request):
     return render(request, 'app/summary.html')
+
+def success(request):
+    return render(request, 'app/success.html')
