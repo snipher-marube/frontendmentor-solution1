@@ -15,7 +15,8 @@ SECRET_KEY = 'django-insecure--s6cr2%ic$58__98yr_0s_c1)#4@^ypmzlw#xcq(sb@26h14kb
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '.vercel.app'
+    '.vercel.app',
+    '127.0.0.1'
 ]
 
 
@@ -118,7 +119,7 @@ STATIC_URL = 'static/'
 MEDIA_URL = 'media/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'static'
+    BASE_DIR / 'tailwindcss/static'
 ]
 
 MEDIA_ROOT = BASE_DIR / 'static/media'
